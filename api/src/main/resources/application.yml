@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: @profiles.active@
+
+
+
+mybatis-plus:
+  mapper-locations: classpath*:mapper/xml/*Mapper.xml
+  type-aliases-package: com.nox.player.appcenter.en.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+
+

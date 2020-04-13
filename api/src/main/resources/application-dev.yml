@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.8.1.200:3306/appmanager?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: appmanager
+    password: appmanager
+#elasticsearch
+  data:
+    elasticsearch:
+      #集群名
+      cluster-name: yeshen-ecs-cluster-2.4.2
+      #注意java的es默认连接端口是9300，9200是http端口，这两个在使用中应注意区分
+      cluster-nodes: 10.8.1.211:9300
+      repositories:
+        enabled: true
+#log
+#logging:
+#  level:
+#    root: info
+#  config: classpath:log4j2-dev.xml
+
+
+
